@@ -15,7 +15,7 @@ body {
 }
 
 .desktop-header {
-  background-color: white;
+  background-color: rgba(255,255,255,1);
   position: fixed;
   display: flex;
   height: 64px;
@@ -55,10 +55,10 @@ body {
 }
 
 .desktop-header a:hover {
-  color: rgba(115,100,92,1);
+  color: rgba(103,97,140,1);
 }
 
-mobile-header {
+.mobile-header {
   display: none;
 }
 
@@ -86,7 +86,7 @@ mobile-header {
 .banner {
   padding-top: 4rem;
   width: 100%;
-  background-color: rgba(7,117,92,0.4);
+  background-color: rgba(214,226,247,1);
 }
 
 .primary {
@@ -123,8 +123,19 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
+.btn {
+  margin-left: 0.5rem;
+  box-shadow: -7px 7px rgba(0,0,0,0.4);
+  transition: transform 1s, box-shadow 1s;
+}
+
+.btn:hover {
+  transform: translate(-10px, 10px);
+  box-shadow: 0px 0px;
+}
+
 .btn a {
-  background-color: rgba(105,111,127,1);
+  background-color: rgba(103,97,140,1);
   color: white;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -135,11 +146,11 @@ h3 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  transition: background-color 1s ease 200ms;
+  transition: background-color 1s ease;
 }
 
 .btn a:hover {
-  background-color: rgba(149,91,113,1);
+/*  background-color: rgba(149,91,113,1); */
 }
 
 @media only screen and (max-width: 860px) {
@@ -169,15 +180,30 @@ h3 {
   padding-bottom: 1.5rem;
 }
 
+.info a {
+  text-decoration: none;
+  color: rgb(95,95,95);
+}
+
+.info a:hover {
+  color: rgb(255,255,255);
+}
+
 .content-box {
   width: 26.44rem;
   border: 1px solid #eaeaea;
   border-top: none;
+  transition: background-color 1.5s ease, color 1.5ms ease-in;
 }
 
 .content-box:hover {
-  background-color: rgba(49,64,54,0.7);
-  color: rgb(255,255,255);
+  background-color: rgba(103,97,140,0.6);
+/*  color: rgb(255,255,255); */
+}
+
+.content-box a {
+  text-decoration: none;
+
 }
 
 #desktop-pic {
@@ -199,6 +225,7 @@ h3 {
   }
 
   .content-box {
+    box-sizing: border-box;
     width: 100%;
     flex-direction: column;
     padding: 1rem;
@@ -216,10 +243,6 @@ h3 {
   .side-text {
     width: 100%;
     padding-left: 1rem;
-  }
-
-  .info a {
-    text-decoration: none;
   }
 }
 
@@ -252,6 +275,11 @@ h3 {
   background-color: white;
   text-align: left;
   margin-bottom: 2rem;
+  transition: background-color 1.5s ease;
+}
+
+.course-box:hover {
+  background-color: rgba(103,97,140,0.6);
 }
 
 .course-box img {
@@ -273,6 +301,10 @@ h3 {
   color: rgb(95,95,95);
 }
 
+.course-info a:hover {
+  color: rgba(255,255,255,1);
+}
+
 .course p {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
@@ -281,8 +313,7 @@ h3 {
 /* courses mobile */
 @media only screen and (max-width: 860px) {
   .course {
-    background-color: #eaeaea;
-    border: 1px solid #d3d3d3;
+    border: 1px solid rgba(255,255,255,0);
   }
 
   .course .container {
@@ -360,6 +391,15 @@ footer {
 
 .terms {
   margin: 1.5rem;
+}
+
+.terms a {
+  text-decoration: none;
+  color: black;
+}
+
+.terms a:hover {
+  color: rgba(103,97,140,1);
 }
 
 @media only screen and (max-width: 700px) {
