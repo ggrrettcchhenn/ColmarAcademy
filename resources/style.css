@@ -2,7 +2,7 @@
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1rem;
   opacity: 0.9;
   text-align: center;
   margin: 0;
@@ -123,10 +123,6 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-.btn {
-  transition: background-color 750ms ease;
-}
-
 .btn a {
   background-color: rgba(105,111,127,1);
   color: white;
@@ -139,10 +135,11 @@ h3 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
+  transition: background-color 1s ease 200ms;
 }
 
 .btn a:hover {
-  background-color: rgba(246,144,77,0.7);
+  background-color: rgba(149,91,113,1);
 }
 
 @media only screen and (max-width: 860px) {
