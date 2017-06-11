@@ -4,21 +4,201 @@
     <meta charset="utf-8">
     <title>Colmar Academy</title>
     <link href="./resources/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i|Roboto:400,700" rel="stylesheet">
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <!-- logo -->
-      <img src="./resources/images/ic-logo.svg" alt="logo">
-
-      <!-- menu -->
-      <nav>
-        <ul>
-          <li><a href="#">On campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For companies</a></li>
-          <li><a href="#">Sign in</a></li>
-        </ul>
+      <!-- desktop header - school logo & text menu -->
+      <div class="desktop-header">
+        <!-- logo & name-->
+        <div class="colmar-logo container">
+          <img src="./resources/images/ic-logo.svg" alt="colmar academy logo">
+          <p><strong>COLMAR</strong>ACADEMY</p>
+        </div>
+        <!-- text menu -->
+        <nav>
+          <ul>
+            <li><a href="#">ON CAMPUS</a></li>
+            <li><a href="#">ONLINE</a></li>
+            <li><a href="#">FOR COMPANIES</a></li>
+            <li><a href="#">SIGN IN</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- mobile header - just icons -->
+      <nav class="mobile-header container">
+        <a href="#"><img src="resources/images/ic-logo.svg" alt="Colmar logo"></a>
+        <a href="#"><img src="resources/images/ic-on-campus.svg" alt="On campus"></a>
+        <a href="#"><img src="resources/images/ic-online.svg" alt="Online"></a>
+        <a href="#"><img src="resources/images/ic-login.svg" alt="Login"></a>
       </nav>
-  </header>
+    </header>
+
+    <!-- banner -->
+    <section class="banner container">
+      <!-- image on left side -->
+      <div class="primary">
+        <img src="resources/images/banner.jpg" alt="students studing at picnic table">
+      </div>
+      <!-- text on right side -->
+      <hgroup class="titles">
+        <h1>LEARN SOMETHING NEW EVERYDAY</h1>
+        <h2>Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit.</h2>
+        <!-- button -->
+        <div class="btn">
+          <a href="#">Start here</a>
+        </div>
+      </hgroup>
+    </section>
+
+    <!-- information section -->
+    <section class="info container">
+      <!-- image and quote on left side -->
+      <div class="primary">
+        <img src="resources/images/information-main.jpg" alt="man reading a book">
+        <h1>It doesn't hurt to keep practicing</h1>
+        <p>"Curabitur vitae libero ipsum porttior consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet efficitur dolo consequat, tristique ligula."</p>
+        <p><small>Emmanuel, Sr Strategist at Hiring.com</small></p>
+      </div>
+      <!-- boxes with school info on right side -->
+      <div class="info">
+        <!-- orientation box -->
+        <div class="container content-box">
+          <img id="desktop-pic" src="resources/images/information-orientation.jpg" alt="walkway from above">
+          <img id="mobile-pic" src="resources/images/information-orientation-mobile.jpg" alt="walkway from above">
+          <div class="side-text">
+            <h3>ORIENTATION DATE</h3>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <!-- campus box -->
+        <div class="container content-box">
+          <img id="desktop-pic" src="resources/images/information-campus.jpg" alt="classroom with map">
+          <img id="mobile-pic" src="resources/images/information-campus-mobile.jpg" alt="classroom with map">
+          <div class="side-text">
+            <h3>OUR CAMPUS</h3>
+            <p>Find which campus is close by you</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <!-- guest speaker box -->
+        <div class="container content-box">
+          <img id="desktop-pic" src="resources/images/information-guest-lecture.jpg" alt="portrait Oliver Sacks">
+          <img id="mobile-pic" src="resources/images/information-guest-lecture-mobile.jpg" alt="portrait Oliver Sacks">
+          <div class="side-text">
+            <h3>OUR GUEST LECTURE</h3>
+            <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- course section -->
+    <section class="course">
+      <h1>Start learning</h1><br /><br />
+      <div class="container">
+        <!-- software engineering box -->
+        <!-- software -->
+        <div class="course-box">
+          <img src="resources/images/course-software.jpg" alt="two computer monitors on a desk">
+          <div class="course-info">
+            <h3>SOFTWARE ENGINEERING</h3>
+            <a href="www.facebook.com">COURSES</a>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+        </div>
+        <!-- computer art -->
+        <div class="course-box">
+          <img src="resources/images/course-computer-art.jpg" alt="smart phone in hand">
+          <div class="course-info">
+            <h3>COMPUTER ART</h3>
+            <a href="#">COURSES</a>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </div>
+        </div>
+        <!-- design -->
+        <div class="course-box">
+          <img src="resources/images/course-design.jpg" alt="old fashioned film camera">
+          <div class="course-info">
+            <h3>DESIGN</h3>
+            <a href="#">COURSES</a>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+        </div>
+        <!-- data course -->
+        <div class="course-box">
+          <img src="resources/images/course-data.jpg" alt="laptop">
+          <div class="course-info">
+            <h3>DATA</h3>
+            <a href="#">COURSES</a>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+        </div>
+        <!-- business course -->
+        <div class="course-box">
+          <img src="resources/images/course-business.jpg" alt="chessboard">
+          <div class="course-info">
+            <h3>BUSINESS</h3>
+            <a href="#">COURSES</a>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+        </div>
+        <!-- marketing course -->
+        <div class="course-box">
+          <img src="resources/images/course-marketing.jpg" alt="person touching their apple watch">
+          <div class="course-info">
+            <h3>MARKETING</h3>
+            <a href="#">COURSES</a>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- thesis section -->
+    <section id="thesis-sec">
+      <h1>Thesis exhibit</h1>
+      <div class="thesis container">
+        <!-- video -->
+        <div class="primary">
+          <video src="resources/videos/thesis.mp4" loop controls>time lapse building</video>
+          <div class="thesis-text">
+            <h3>Reimagine urban</h3>
+            <p>"Curabitur vitae libero ipsum porttior consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet efficitur dolo consequat, tristique ligula."</p>
+          </div>
+        </div>
+
+        <!-- thesis projects sidebar -->
+        <div class="thesis-sidebar">
+            <div class="container content-box">
+              <img src="resources/images/thesis-fisma.jpg" alt="desk full of papers">
+              <div class="side-text">
+                <h3>Fisma: Design and</h3>
+                <p>Designer showcase of new prototype project</p>
+              </div>
+            </div>
+            <div class="container content-box">
+              <img src="resources/images/thesis-now-and-then.jpg" alt="New York skyline">
+              <div class="side-text">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="trademark">© 2016 Colmar Academy. All rights reserved</p>
+      <nav class="terms">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>
+    </footer>
+
   </body>
 </html>
